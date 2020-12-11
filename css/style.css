@@ -9,3 +9,31 @@
     width: 300px;
     background-color:black;
 }
+
+nav{
+    height: 150px;
+    width: 100%;
+    background: #FAFAFA;
+    border-bottom: 1px solid #1CBCD7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#links>a {
+    margin-left: 1em;
+
+}
+
+.home, .link{
+    color: #303C41;
+    font-size: 30px;
+
+}
+
+.link:hover{
+    color: #1BA9B2;
+    font-size:40px;
+    transition-duration: 1s;
+    text-decoration: none;
+}
