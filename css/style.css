@@ -1,17 +1,18 @@
-.background{
+#particles-js{
     background:#FAFAFA;
     height: 3000px;
     width: 100%;
+    z-index: -1;
 }
 
-#test{
-    height: 300px;
-    width: 300px;
-    background-color:black;
+#wrapper{
+    position: relative;
 }
+
+
 
 nav{
-    height: 150px;
+    height: 100px;
     width: 100%;
     background: #FAFAFA;
     border-bottom: 1px solid #1CBCD7;
@@ -28,12 +29,35 @@ nav{
 .home, .link{
     color: #303C41;
     font-size: 30px;
+    -webkit-transition: all .5s ease-in-out;
 
 }
 
 .link:hover{
     color: #1BA9B2;
     font-size:40px;
-    transition-duration: 1s;
+    -webkit-transition: all .5s ease-in-out;
     text-decoration: none;
+}
+
+h1{
+    font-size: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width:100%;
+    height: 150px;
+    background: #303C41;
 }

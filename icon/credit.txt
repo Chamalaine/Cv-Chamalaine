@@ -1,0 +1,22 @@
+php :
+Colin Viebrock
+
+creative cloud : 
+Saingfx
+
+HTML CSS : 
+daPhyre
+https://creativecommons.org/licenses/by/3.0/deed.en
+
+JS : 
+https://worldvectorlogo.com/fr/logo/javascript
+
+Jquery : 
+https://iconscout.com/licenses#logo_uses
+
+Mysql : 
+https://worldvectorlogo.com/fr/logo/mysql
+
+Symfony : 
+https://symfony.com/trademark
+
