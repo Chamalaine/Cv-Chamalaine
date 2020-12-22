@@ -43,19 +43,39 @@
 
 <body>
     <div class="position-relative">
-        <nav class="sticky-top">
+        <nav class="d-flex justify-content-between navbar navbar-expand-lg sticky-top container-fluid">
 
 
-            <div class="home_box">
-                <a class="home">SOUFI Chamalaine</a>
-            </div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
 
 
-            <div id="links">
-                <a class="link">Compétences</a>
-                <a class="link">Formations</a>
-                <a class="link">Expériences</a>
-                <a class="link">A propos de Moi</a>
+          
+                
+            
+
+
+            <div  class="collapse navbar-collapse links justify-content-between " id="navbarTogglerDemo01">
+                <a class="navbar-brand home  m-3" id="brand">SOUFI Chamalaine</a>
+
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="link m-3">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link m-3">Formations</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="link m-3">Expériences</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="link m-3">A propos de Moi</a>
+                    </li>
+                </ul>
             </div>
 
         </nav>
@@ -64,10 +84,69 @@
 
 
 
-        <div id="particles-js">
+        <div id="particles-js" class="container-fluid ">
 
-            <div class="position-absolute mx-auto w-75 h-75 align-middle">
-                <h1>SOUFI Chamalaine</h1>
+
+
+            <div class="position-absolute container-fluid h-100 mx-auto">
+
+
+
+
+                <div class="container-fluid justify-content-center col-lg-10 col-sm-12">
+                    <div class="d-flex h-25 justify-content-center align-items-center">
+                        
+                            <img src="img/gigachad.jpg" class="rounded-circle img-fluid" id="profile">
+                        
+
+                        <div class="h-25">
+                            <h1>SOUFI Chamalaine</h1>
+                            <h2>Développeur web</h2>
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+                    <div id="competences" class="container-fluid rounded">
+
+                        <div class="d-flex justify-content-center m-5">
+                            <h1>Compétences</h1>
+                        </div>
+
+                        <div class="d-flex row">
+                            <div class="d-flex flex-column col border-right">
+                                <img src="icon/php.svg" class="svg m-3" data-aos="fade-right">
+                                <img src="icon/html.svg" class="svg m-3 " data-aos="fade-right">
+                                <img src="icon/javascript.svg" class="svg m-3" data-aos="fade-right">
+                                <img src="icon/mysql.svg" class="svg m-3" data-aos="fade-right">
+                            </div>
+
+                            <div class="d-flex flex-column col">
+                                <img src="icon/symfony.svg" class="svg m-3" data-aos="fade-left">
+                                <img src="icon/Bootstrap.svg" class="svg m-3"data-aos="fade-left">
+                                <img src="icon/jquery.svg" class="svg m-3"data-aos="fade-left">
+                                <img src="icon/database.svg" class="svg m-3"data-aos="fade-left">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div id="formations">
+
+                    </div>
+
+                    <h1>Expériences</h1>
+
+
+
+                    
+                </div>
             </div>
 
         </div>
@@ -79,8 +158,10 @@
     <script src="script/app.js"></script>
     <script src="script/particles.min.js"></script>
 
-    <footer>
-
+    <footer class="container-fluid">
+        <a href="https://github.com/Chamalaine" target="blank"><img src="icon/github-brands.svg" class="footerBut"></a>
+        <a href="https://www.linkedin.com/in/chamalaine-soufi-6773b9b2/" target="blank"><img src="icon/linkedin-in-brands.svg" class="footerBut"></a>
+        <a href="https://fr2.slideshare.net/ChamalaineSoufi" target="blank"><img src="icon/slideshare-brands.svg" class="footerBut"></a>
     </footer>
 
 
@@ -97,28 +178,30 @@
 
 
 
-    <!--Jquery-->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
-        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
-        crossorigin="anonymous"></script>
-
-        <!-- MDB JS -->
-        <script
-        type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/2.2.1/mdb.min.js"
-        ></script>
-
-        <!--JS-->
-        <script src="script/script.js"></script>
-
-
-        <!-- AOS-->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-
-
 
 </body>
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+    integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+    crossorigin="anonymous"></script>
+
+    <!-- MDB JS -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/2.2.1/mdb.min.js"
+    ></script>
+
+    <!--JS-->
+    <script src="script/script.js"></script>
+
+
+    <!-- AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!--Script-->
+    <script src="script/script.js"></script>
 </html>
