@@ -10,10 +10,8 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- Font Awesome -->
-    <link
-    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    rel="stylesheet"
-    />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -62,18 +60,18 @@
 
                 <ul class="navbar-nav justify-content-end">
                     <li class="nav-item">
-                        <a class="link m-3">Compétences</a>
+                        <a class="link m-3" href="#competences">Compétences</a>
                     </li>
                     <li class="nav-item">
-                        <a class="link m-3">Formations</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="link m-3">Expériences</a>
+                        <a class="link m-3" href="#formations">Formations</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="link m-3">A propos de Moi</a>
+                        <a class="link m-3" href="#experiences">Expériences</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="link m-3" href="#propos">A propos de Moi</a>
                     </li>
                 </ul>
             </div>
@@ -94,14 +92,16 @@
 
 
                 <div class="container-fluid justify-content-center col-lg-10 col-sm-12">
-                    <div class="d-flex h-25 justify-content-center align-items-center">
-                        
-                            <img src="img/gigachad.jpg" class="rounded-circle img-fluid" id="profile">
-                        
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                        <div class="col-sm">
+                            <img src="img/profile.jpg" class="rounded-circle img-fluid" id="profile" data-aos="zoom-in" data-aos-duration="3000">
+                        </div>
 
-                        <div class="h-25">
-                            <h1>SOUFI Chamalaine</h1>
-                            <h2>Développeur web</h2>
+                        <div class="col-sm"> 
+                            <h1 data-aos="fade-right" data-aos-duration="3000">SOUFI Chamalaine</h1>
+                            <h2 data-aos="fade-right" data-aos-duration="3000">Développeur web</h2>
+                        </div>
                         </div>
                     </div>
                     
@@ -110,25 +110,25 @@
 
 
 
-                    <div id="competences" class="container-fluid rounded">
+                    <div  class="box container-fluid rounded" id="competences">
 
                         <div class="d-flex justify-content-center m-5">
                             <h1>Compétences</h1>
                         </div>
 
-                        <div class="d-flex row">
-                            <div class="d-flex flex-column col border-right">
-                                <img src="icon/php.svg" class="svg m-3" data-aos="fade-right">
-                                <img src="icon/html.svg" class="svg m-3 " data-aos="fade-right">
-                                <img src="icon/javascript.svg" class="svg m-3" data-aos="fade-right">
-                                <img src="icon/mysql.svg" class="svg m-3" data-aos="fade-right">
+                        <div class="d-flex row m-lg-5">
+                            <div class="d-flex flex-column col bordure">
+                                <img src="icon/php.svg" class="svg m-3" data-aos="fade-right " data-aos-duration="3000">
+                                <img src="icon/html.svg" class="svg m-3 " data-aos="fade-right" data-aos-duration="3000">
+                                <img src="icon/javascript.svg" class="svg m-3" data-aos="fade-right" data-aos-duration="3000">
+                                <img src="icon/mysql.svg" class="svg m-3" data-aos="fade-right" data-aos-duration="3000">
                             </div>
 
                             <div class="d-flex flex-column col">
-                                <img src="icon/symfony.svg" class="svg m-3" data-aos="fade-left">
-                                <img src="icon/Bootstrap.svg" class="svg m-3"data-aos="fade-left">
-                                <img src="icon/jquery.svg" class="svg m-3"data-aos="fade-left">
-                                <img src="icon/database.svg" class="svg m-3"data-aos="fade-left">
+                                <img src="icon/symfony.svg" class="svg m-3" data-aos="fade-left" data-aos-duration="3000">
+                                <img src="icon/Bootstrap.svg" class="svg m-3"data-aos="fade-left" data-aos-duration="3000">
+                                <img src="icon/jquery.svg" class="svg m-3"data-aos="fade-left" data-aos-duration="3000">
+                                <img src="icon/database.svg" class="svg m-3"data-aos="fade-left" data-aos-duration="3000">
                             </div>
                         </div>
                     </div>
@@ -137,11 +137,49 @@
 
 
 
-                    <div id="formations">
+                    <div class="box container-fluid rounded" id="formations">
 
+                        <div class="d-flex justify-content-center m-5">
+                            <h1>Formations</h1>
+                        </div>
+
+                        <div class="d-flex row m-lg-5">
+                            <div class="d-flex flex-column col col-lg-2 col-sm-3 bordure justify-content-around align-items-end" data-aos="flip-up" data-aos-duration="3000">
+                                <h2 class="m-lg-3">2020</h2>
+                                <h2 class="m-lg-3">2015</h2>
+                                <h2 class="m-lg-3">2014</h2>
+                                <h2 class="m-lg-3">2014</h2>
+                            </div>
+
+                            <div class="d-flex flex-column col col-lg-10 col-sm-9 justify-content-between" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-center">
+                                <div class="m-lg-3">
+                                    <h2>Titre professionnel de DEVELOPPEUR WEB ( BAC +2) </h2>
+                                    <p>Elan-Formation, initiation à la programmation web</p>
+                                </div>
+
+                                <div class="m-lg-3">
+                                    <h2>Séminaire Jeune Institut des Hautes Etudes de Défense Nationale</h2>
+                                    <p>Séminaire de sensibilisation aux questions de Défense
+                                        Nationale, rédaction d’une note sur le sujet " lois mémorielles et communeautarisme " (1 semaine)</p>
+                                </div>
+
+                                <div class="m-lg-3">
+                                    <h2>Période Militaire Supérieur</h2>
+                                    <p>Classes militaires et initiation au commandement militaire</p>
+                                </div>
+
+                                <div class="m-lg-3">
+                                    <h2>Niveau L1 Droit/Science Politique</h2>
+                                    <p>Institut Catholique de Paris</p>
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
-
+                    <div id="experiences">
                     <h1>Expériences</h1>
+                    </div>
 
 
 
@@ -158,7 +196,7 @@
     <script src="script/app.js"></script>
     <script src="script/particles.min.js"></script>
 
-    <footer class="container-fluid">
+    <footer class="container-fluid fixed-bottom">
         <a href="https://github.com/Chamalaine" target="blank"><img src="icon/github-brands.svg" class="footerBut"></a>
         <a href="https://www.linkedin.com/in/chamalaine-soufi-6773b9b2/" target="blank"><img src="icon/linkedin-in-brands.svg" class="footerBut"></a>
         <a href="https://fr2.slideshare.net/ChamalaineSoufi" target="blank"><img src="icon/slideshare-brands.svg" class="footerBut"></a>
@@ -200,7 +238,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
+    </script>   
 
     <!--Script-->
     <script src="script/script.js"></script>

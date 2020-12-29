@@ -23,6 +23,7 @@ nav{
     color: #303C41;
     font-size: 30px;
     -webkit-transition: all .5s ease-in-out;
+    font-family: 'Raleway', sans-serif;
 
 }
 
@@ -35,9 +36,21 @@ nav{
 
 h1{
     font-size: 60px;
+    color:#1BA9B2;
+    font-family: 'Montserrat', sans-serif;
 }
 
-#competences{
+h2{
+
+    font-family: 'Raleway', sans-serif;
+}
+
+#profile{
+    height: 350px;
+    border: 2px solid  #1CBCD7;
+}
+
+.box{
     background: #FAFAFA;
     border: 1px solid  #1CBCD7;
 
@@ -59,8 +72,8 @@ h1{
     height: 100px;
 }
 
-.border-right {
-    border-right: 1px solid black;
+.bordure {
+    border-right: 1px solid #1CBCD7;
 }
 
 
