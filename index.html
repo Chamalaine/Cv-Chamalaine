@@ -10,17 +10,15 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- Font Awesome -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
+    
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     
     <!-- Google Fonts -->
-    <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
 
     <!-- MDB -->
     <link
@@ -33,6 +31,11 @@
 
 
 
+
+
+
+
+
     <title>Soufi Chamalaine</title>
 </head>
 
@@ -40,13 +43,16 @@
 
 
 <body>
+
+
+
     <div class="position-relative">
         <nav class="d-flex justify-content-between navbar navbar-expand-lg sticky-top container-fluid">
 
 
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" id="burger"></i>
               </button>
 
 
@@ -82,7 +88,7 @@
 
 
 
-        <div id="particles-js" class="container-fluid ">
+        <div id="particles-js">
 
 
 
@@ -93,14 +99,15 @@
 
                 <div class="container-fluid justify-content-center col-lg-10 col-sm-12">
                     <div class="container">
-                        <div class="row align-items-center justify-content-center">
+                        <div class="row align-items-center justify-content-center mt-5 mb-5">
                         <div class="col-sm">
-                            <img src="img/profile.jpg" class="rounded-circle img-fluid" id="profile" data-aos="zoom-in" data-aos-duration="3000">
+                            <img src="img/profile.jpg" class="rounded-circle img-fluid  hover-shadow" id="profile" data-aos="zoom-in" data-aos-duration="3000">
                         </div>
 
-                        <div class="col-sm"> 
+                        <div class="col-sm d-flex flex-column align-items-center justify-content-start"> 
                             <h1 data-aos="fade-right" data-aos-duration="3000">SOUFI Chamalaine</h1>
                             <h2 data-aos="fade-right" data-aos-duration="3000">Développeur web</h2>
+                            <h2 data-aos="fade-right" data-aos-duration="3000">25 ans</h2>
                         </div>
                         </div>
                     </div>
@@ -137,49 +144,145 @@
 
 
 
-                    <div class="box container-fluid rounded" id="formations">
+                    <div class="box container-fluid rounded mt-5" id="formations">
 
                         <div class="d-flex justify-content-center m-5">
                             <h1>Formations</h1>
                         </div>
 
                         <div class="d-flex row m-lg-5">
-                            <div class="d-flex flex-column col col-lg-2 col-sm-3 bordure justify-content-around align-items-end" data-aos="flip-up" data-aos-duration="3000">
+                            <div class="d-flex flex-column col col-lg-2 col-sm-1 bordure justify-content-around align-items-end">
+                                <h2 class="m-lg-3">2021</h2>
                                 <h2 class="m-lg-3">2020</h2>
                                 <h2 class="m-lg-3">2015</h2>
                                 <h2 class="m-lg-3">2014</h2>
                                 <h2 class="m-lg-3">2014</h2>
                             </div>
 
-                            <div class="d-flex flex-column col col-lg-10 col-sm-9 justify-content-between" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-center">
+                            <div class="d-flex flex-column col col-lg-10 col-sm-11 justify-content-between" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-center">
                                 <div class="m-lg-3">
-                                    <h2>Titre professionnel de DEVELOPPEUR WEB ( BAC +2) </h2>
-                                    <p>Elan-Formation, initiation à la programmation web</p>
+                                    <h2>Concepteur Développeur d'Applications (Bac+3) </h2>
+                                    <p>CCI Campus, Strasbourg, continuité de ma précédente formation qui vise à consolider mes acquis techniques et m'ouvrir à des nouvelles compétences tels que la Gestion de Projet ou le Devops </p>
+                                </div>
+                                <div class="m-lg-3">
+                                    <h2>Titre professionnel de DEVELOPPEUR WEB (Bac+2) </h2>
+                                    <p>Elan-Formation, Strasbourg, apprentissage des bases de la programmation Web durant 9 mois</p>
                                 </div>
 
                                 <div class="m-lg-3">
                                     <h2>Séminaire Jeune Institut des Hautes Etudes de Défense Nationale</h2>
-                                    <p>Séminaire de sensibilisation aux questions de Défense
+                                    <p>IHEDN Metz, Séminaire de sensibilisation aux questions de Défense
                                         Nationale, rédaction d’une note sur le sujet " lois mémorielles et communeautarisme " (1 semaine)</p>
                                 </div>
 
                                 <div class="m-lg-3">
                                     <h2>Période Militaire Supérieur</h2>
-                                    <p>Classes militaires et initiation au commandement militaire</p>
+                                    <p>503e Régiment du Train, Nîmes, classes militaires durant 1 mois et initiation au commandement militaire</p>
                                 </div>
 
                                 <div class="m-lg-3">
                                     <h2>Niveau L1 Droit/Science Politique</h2>
-                                    <p>Institut Catholique de Paris</p>
+                                    <p>Institut Catholique de Paris, premières années d'études supérieurs par intérêt personnel pour la Science Politique.</p>
                                 </div>
 
 
                             </div>
                         </div>
                     </div>
-                    <div id="experiences">
-                    <h1>Expériences</h1>
+                    <div id="experiences" class="mt-5 container-fluid">
+                         
+                        <div class="row justify-content-between align-content-between" data-aos="fade-down"  data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
+
+                            <div class="xp-box col-lg-4 col-sm-6 justify-content-center  d-flex flex-column align-items-center">
+                                <h2 >2020</h2>
+                                <div class="d-flex flex-column justify-content-center align-items-center bordure-top">
+                                    <h2>Projet Surassur</h2>
+                                    <p class="text-center">Application web de gestion de base de données d'assurés sous Symfony 4 à destination d'une association intermédiaire d'assurance de rapatriement de corps</p>
+                                </div>
+                            </div>
+    
+    
+                            <div class="xp-box col-lg-4 col-sm-6 justify-content-center  d-flex flex-column align-items-center">
+                                <h2>2017</h2>
+                                <div class="d-flex flex-column justify-content-center align-items-center bordure-top">
+                                    <h2>Intermédiaire d'assurance</h2>
+                                    <p class="text-center">Association ayant pour principale mission le rôle d'intermédiaire d'assurance de rapatriement de corps, négocier les contrats avec les cabinets d'assurance, faire souscrire et tenir regulièrement la base d'assurés et apporter un soutien en cas de décès</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row justify-content-between mt-3 " data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
+                            <div class="xp-box col-lg-4 col-sm-6 justify-content-center  d-flex flex-column align-items-center" >
+                                <h2 >2015</h2>
+                                <div class="d-flex flex-column justify-content-center align-items-center bordure-top">
+                                    <h2>Gestionnaire Immobilier</h2>
+                                    <p class="text-center">A mi-temps au près d'une S.C.I, assurer les visites des logements, la conciergerie, la correspondance avec les locataires et superviser les travaux </p>
+                                </div>
+                            </div>
+
+                            <div class="xp-box col-lg-4 col-sm-6 justify-content-center  d-flex flex-column align-items-center">
+                                <h2>Depuis 2010</h2>
+                                <div class="d-flex flex-column justify-content-center align-items-center bordure-top">
+                                    <h2>Bénévole</h2>
+                                    <p class="text-center">Association d'anciens combattants, aide pour les démarches administratives pour les anciens combattants</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
+
+
+
+
+
+
+
+                    <div id="propos" class="carousel slide mt-5 w-50" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#propos" data-slide-to="0" class="active"></li>
+                          <li data-target="#propos" data-slide-to="1"></li>
+                          <li data-target="#propos" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/histoire.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Histoire</h5>
+                              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/voyage.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Voyage</h5>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/cinema.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Cinema</h5>
+                              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Précédent</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Suivant</span>
+                        </a>
+                      </div>
+
+
+
+                    
+
+
 
 
 
@@ -191,55 +294,56 @@
 
 
     </div>
+
+
+
+
     <!-- Particule Js -->
     <script src="script/particles.js"></script>
     <script src="script/app.js"></script>
     <script src="script/particles.min.js"></script>
 
-    <footer class="container-fluid fixed-bottom">
-        <a href="https://github.com/Chamalaine" target="blank"><img src="icon/github-brands.svg" class="footerBut"></a>
-        <a href="https://www.linkedin.com/in/chamalaine-soufi-6773b9b2/" target="blank"><img src="icon/linkedin-in-brands.svg" class="footerBut"></a>
-        <a href="https://fr2.slideshare.net/ChamalaineSoufi" target="blank"><img src="icon/slideshare-brands.svg" class="footerBut"></a>
+
+
+    <footer class="fixed-bottom container-fluid d-flex justify-content-evenly align-items-center p-1 ">
+
+        <div class="justify-content-center align-content-center">
+            <a href="https://github.com/Chamalaine" target="blank"><img src="icon/github-brands.svg" class="footerBut ml-3"></a>
+            <a href="https://www.linkedin.com/in/chamalaine-soufi-6773b9b2/" target="blank"><img src="icon/linkedin-in-brands.svg" class="footerBut ml-3"></a>
+            <a href="https://fr2.slideshare.net/ChamalaineSoufi" target="blank"><img src="icon/slideshare-brands.svg" class="footerBut ml-3"></a>
+        </div>
+
+
+        <i class="fas fa-comment" id="formBut"></i>
     </footer>
 
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+        crossorigin="anonymous"></script>
 
 
 
 
+        <!-- MDB JS -->
+        <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/2.2.1/mdb.min.js"
+        ></script>
+
+        <!-- AOS-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>   
 
 
 
 
-
-
-
-
-
+        <!--Script-->
+        <script src="script/script.js"></script>
 
 
 </body>
 
-    <!--Jquery-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
-    integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
-    crossorigin="anonymous"></script>
-
-    <!-- MDB JS -->
-    <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/2.2.1/mdb.min.js"
-    ></script>
-
-    <!--JS-->
-    <script src="script/script.js"></script>
-
-
-    <!-- AOS-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>   
-
-    <!--Script-->
-    <script src="script/script.js"></script>
 </html>

@@ -1,15 +1,16 @@
 #particles-js{
     background:#FAFAFA;
-    height: 3000px;
-    width: 100%;
     z-index: -1;
+    height: 4000px;
 }
 
 #wrapper{
     position: relative;
 }
 
-
+#burger{
+    font-size:30px;
+}
 
 nav{
     background: #FAFAFA;
@@ -67,25 +68,32 @@ h2{
 
 }
 
+.xp-box{
+    background: #FAFAFA;
+    border: 1px solid  #1CBCD7;
+}
+
+
+i{
+    font-size: 50px;
+    color: #1CBCD7;
+}
 
 .footerBut{
-    height: 100px;
+    height: 50px;
 }
 
 .bordure {
-    border-right: 1px solid #1CBCD7;
+    border-right: 3px solid #1CBCD7;
 }
 
+.bordure-top{
+    border-top: 3px solid #1CBCD7 ;
+}
 
-
-
-
-
-
-
-
+  
 
 footer{
-    height: 150px;
+    
     background: #303C41;
 }

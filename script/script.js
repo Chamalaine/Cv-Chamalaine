@@ -1,17 +1,20 @@
-var granimInstance = new Granim({
-    element: '#brand',
-    direction: 'left-right',
-    states : {
-        "default-state": {
-            gradients: [
-                ['#EB3349', '#F45C43'],
-                ['#FF8008', '#FFC837'],
-                ['#4CB8C4', '#3CD3AD'],
-                ['#24C6DC', '#514A9D'],
-                ['#FF512F', '#DD2476'],
-                ['#DA22FF', '#9733EE']
-            ],
-            transitionSpeed: 2000
-        }
-    }
-});
+var $carousel = $('.main-carousel').flickity({
+	imagesLoaded: true,
+	percentPosition: false,
+  });
+  
+  var $imgs = $carousel.find('.carousel-cell img');
+
+  var docStyle = document.documentElement.style;
+  var transformProp = typeof docStyle.transform == 'string' ?
+	'transform' : 'WebkitTransform';
+
+  var flkty = $carousel.data('flickity');
+  
+  $carousel.on( 'scroll.flickity', function() {
+	flkty.slides.forEach( function( slide, i ) {
+	  var img = $imgs[i];
+	  var x = ( slide.target + flkty.x ) * -1/3;
+	  img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+	});
+  });
