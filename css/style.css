@@ -1,7 +1,7 @@
 #particles-js{
     background:#FAFAFA;
     z-index: -1;
-    height: 5000px;
+    height: 4100px;
 }
 
 #wrapper{
@@ -83,7 +83,11 @@ i{
     height: 50px;
 }
 
-.bordure {
+.bordure-img {
+    border-right: 3px solid #1CBCD7;
+}
+
+.bordure-right {
     border-right: 3px solid #1CBCD7;
 }
 
@@ -91,9 +95,40 @@ i{
     border-top: 3px solid #1CBCD7 ;
 }
 
-  
+.bordure-bot{
+    border-bottom: 3px solid #1CBCD7 ;
+}
+
+label{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#bouton{
+    color:#1BA9B2;
+}
+
+.mentions * {
+    color:#1BA9B2;
+    font-family: 'Raleway', sans-serif;
+}
+
+.mentions a {
+    text-decoration: none;
+}
 
 footer{
     
     background: #303C41;
 }
+
+
+@media screen and (max-width: 640px) {
+    #particles-js{
+        height: 6700px;
+    }
+
+    .bordure-img{
+        border-right: none;
+    }
+  }

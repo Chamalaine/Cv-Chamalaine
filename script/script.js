@@ -4,12 +4,12 @@ $(document).ready(function () {
         event.preventDefault();
 
         $.post($(this).attr('action'), $(this).serializeArray(), function (data) {
-            let $alert = $('#contact div');
+            let $alert = $('#alerte');
 
-            if (data.result===1) {
-                $alert.addClass('alert-success').text('Le message a bien été envoyé !').removeClass('d-none');
+            if (data.result==="succes") {
+                $alert.addClass('alert-success').text('Le message a bien été envoyé').removeClass('d-none alert-danger');
             } else {
-                $alert.addClass('alert-danger').text('Erreur lors de l\'envoi du message !').removeClass('d-none');
+                $alert.addClass('alert-danger').text('Remplissez correctement le formulaire').removeClass('d-none alert-success');
             }
         });
     });

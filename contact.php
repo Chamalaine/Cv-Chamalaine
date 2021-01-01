@@ -1,4 +1,13 @@
 <?php
+
+
+$email=$_POST['email'];
+$message=$_POST['message'];
+$subject=$_POST['subject'];
+$name=$_POST['name'];
+
+if(filter_var($email, FILTER_VALIDATE_EMAIL)  && !empty($message) && !empty($subject) && !empty($name)){
+
 header('Content-Type: application/json');
 
 // On inclut le fichier autoload du dossier vendor
@@ -15,13 +24,25 @@ $transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
 // Create the Mailer using your created Transport
 $mailer = new Swift_Mailer($transport);
 // Create a message
-$message = (new Swift_Message("Nouveau message de {$_POST['name']}[{$_POST['email']}] : {$_POST['subject']}"))
+$message = (new Swift_Message("Message de {$name} : {$subject}"))
     ->setFrom(['surassur.test@gmail.com'])
     ->setTo(['soufi.chamalaine@gmail.com'])
-    ->setReplyTo($_POST['email'])
-    ->setBody($_POST['message']);
+    ->setReplyTo($email)
+    ->setBody($message);
 // Send the message
-$result = $mailer->send($message);
+$mailer->send($message);
+
+$result="succes";
+
+}
+
+else{
+
+    $result="echec";
+
+}
+
+
 echo json_encode([
     'result' => $result
 ]);
