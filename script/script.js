@@ -3,9 +3,15 @@ $(document).ready(function () {
         
         event.preventDefault();
 
+        // Mise en place du formulaire asynchrone 
         $.post($(this).attr('action'), $(this).serializeArray(), function (data) {
+
+
+            // On stock notre div d'alerte
             let $alert = $('#alerte');
 
+
+            // Affichage du message selon la réussite ou non de l'envoie du mail
             if (data.result==="succes") {
                 $alert.addClass('alert-success').text('Le message a bien été envoyé').removeClass('d-none alert-danger');
             } else {
@@ -15,6 +21,9 @@ $(document).ready(function () {
     });
 });
 
+
+
+// Script pour la barre de consentement de cookie en utilisant la librairie cookieconsent
 window.cookieconsent.initialise({
         
     "palette": {
