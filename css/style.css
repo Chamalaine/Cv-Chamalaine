@@ -1,7 +1,7 @@
 #particles-js{
     background:#FAFAFA;
     z-index: -1;
-    height: 4500px;
+    height: 3800px;
 }
 
 #wrapper{
@@ -18,8 +18,6 @@ nav{
 
 }
 
-
-
 #brand, .link{
     color: #303C41;
     font-size: 30px;
@@ -31,7 +29,7 @@ nav{
 .link:hover{
     color: #1BA9B2;
     font-size:40px;
-    -webkit-transition: all .5s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
     text-decoration: none;
 }
 
@@ -58,13 +56,17 @@ h2{
 
 }
 
+.bleu{
+    color:#1CBCD7;
+}
+
 .svg{
-    height: 250px;
+    height: 175px;
 }
 
 .svg:hover{
-    height:275px;
-    -webkit-transition: all .5s ease-in-out;
+    height:200px;
+    -webkit-transition: all .2s ease-in-out;
 
 }
 
@@ -125,7 +127,7 @@ footer{
 
 @media screen and (max-width: 640px) {
     #particles-js{
-        height: 6700px;
+        height: 5800px;
     }
 
     .bordure-img{

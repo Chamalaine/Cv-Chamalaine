@@ -3,3 +3,6 @@ Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains
 </IfModule>
 
 
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://chamalaine.fr/$1 [R,L]

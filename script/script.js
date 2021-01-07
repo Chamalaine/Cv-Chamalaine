@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+    // Contact Submit
     $('#contact').submit(function (event) {
         
         event.preventDefault();
@@ -6,10 +8,8 @@ $(document).ready(function () {
         // Mise en place du formulaire asynchrone 
         $.post($(this).attr('action'), $(this).serializeArray(), function (data) {
 
-
             // On stock notre div d'alerte
             let $alert = $('#alerte');
-
 
             // Affichage du message selon la réussite ou non de l'envoie du mail
             if (data.result==="succes") {
@@ -20,7 +20,6 @@ $(document).ready(function () {
         });
     });
 });
-
 
 
 // Script pour la barre de consentement de cookie en utilisant la librairie cookieconsent

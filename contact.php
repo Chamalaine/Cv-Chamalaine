@@ -20,8 +20,6 @@ $transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
 ->setUsername('surassur.amc@gmail.com')
 ->setPassword("surassuramc1367");
 
-
-
 // On crée le mailer à l'aide du transport 
 $mailer = new Swift_Mailer($transport);
 
@@ -43,7 +41,6 @@ else{
 
     // Si le formulaire est mal remplie
     $result="echec";
-
 }
 
 // On stock le resultat dans un tableau json à destination du script js
